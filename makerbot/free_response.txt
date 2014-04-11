@@ -1,0 +1,7 @@
+The four somewhat-technical questions asked in an initial phone interview with the 
+VP of software at MakerBot
+
+-Difference between a class and an object?
+-Example of a time you used inheritance?
+-What is MVC? What's a view?
+-Why the need for both Fixnum and Bignum in Ruby? How big can  Bignums get?
