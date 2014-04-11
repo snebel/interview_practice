@@ -10,7 +10,6 @@ def reduce_intervals(arr)
   # overlap with any others down the line
   arr.sort_by!{|a| a[0]}
   new_arr = []
-  i = 0
   for i in(0...arr.size)
     if arr[i+1] && overlap?(arr[i], arr[i+1])
       arr[i+1] = merge(arr[i], arr[i+1])
@@ -25,6 +24,6 @@ def overlap?(int1, int2)
   int1[1] >= int2[0] ? true : false
 end
 
-def merge(int1, int2) [1,6][2,3]
+def merge(int1, int2) # assume int1 is 'less' than int2
   int1[1] > int2[1] ? int1 : [int1[0], int2[1]]
 end
