@@ -1,0 +1,12 @@
+Here's the list of questions I was asked during an initial Skype interview with
+Stack Builders:
+
+-Thoughts on testing/TDD?
+-What's the relationship between testing and software architecture?
+-Who's Uncle Bob?
+-Who's Martin Fowler?
+-What's Heartbleed?
+-Why is Agile a successful methodology?
+-Describe your understanding of Ruby as a language
+-What's a difference between Java and Ruby?
+-What's the difference between including and extending a module in Ruby?
