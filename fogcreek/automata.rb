@@ -22,7 +22,7 @@
 # Definitiion: A deterministic finite automaton (DFA) takes an array of 0s and 1s as input
 # and outputs true/false (accepts/rejects the input) depending on the state of the machine.
 # For example, an input of [1, 1, 0, 0] would lead to an accept state in this machine, and
-# an input of [0,1] would lead 
+# an input of [0,1] would lead to a reject state. 
 
 # QUESTION 1: What are all the inputs that this machine accepts?
 #
@@ -34,8 +34,9 @@
 # an arbitrary number of times and ... can be any sequence of 0s and 1s.
 
 # QUESTION 2: Write a Node class to simulate a DFA. A Node has a boolean 'accept'
-# property, and a next_state property that is a 2-element array defining which node
-# to proceed to given either a 0 or a 1.
+# property, and a next_state property that defines which node to proceed to given 
+# either a 0 or a 1. It also has a 'simulate' method for simulating the behavior
+# of a DFA given a specific input and current node.
 
 class Node
   def initialize(next_state, accept)
