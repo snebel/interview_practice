@@ -3,7 +3,7 @@
 # (1) Say we have an array of objects [a, b, c,...], where each object has children,
 #     e.g., a.children => [a1, a2], and each child also has children, etc.
 #     Write a method that takes an array of objects and an integer depth and returns
-#     an array of the following form going in 'depth' number of levels
+#     an array of the following form 'depth' number of levels deep
 #     [{
 #       id: a,
 #       children: [
@@ -30,6 +30,7 @@ def hydrate(arr, depth)
   end
 end
 
+
 # (2) Say we have a big array of objects (hashes), e.g. the results from a mongodb
 #     database call. Each hash has an id property, but the ids don't have any natural
 #     ordering. Write a method that takes in an array of objects and an array of ids,
@@ -41,4 +42,3 @@ def sort(objects, ids)
   objects.each{|obj| dict[obj.id] = obj}
   return ids.map{|id| dict[id]}
 end
-
